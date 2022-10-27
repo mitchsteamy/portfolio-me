@@ -4,7 +4,6 @@ import BackgroundCircles from './BackgroundCircles';
 
 import Link from 'next/link';
 import Image from 'next/image'
-import profilePic from '../assets/profile-pic.jpg'
 import { PageInfo } from '../typings';
 import { urlFor } from '../sanity';
 

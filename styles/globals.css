@@ -11,9 +11,3 @@
         @apply outline-none bg-[#515151]/30 rounded-sm border-b px-6 py-4 border-[#CED0CE] text-lightGray placeholder:text-lightGray/50 transition-all focus:border-[#6699CC]/90 focus:text-[#6699CC]/90 hover:border-[#6699CC]/90
     }
 }
-
-@layer utilities {
-    .pb-safe {
-        padding-bottom: env(safe-area-inset-bottom);
-    }
-}
