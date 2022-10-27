@@ -4,4 +4,12 @@ const nextConfig = {
   swcMinify: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  reactStrictMode: true,
+  images: {
+    domains: [
+      'cdn.sanity.io',
+      'www.123rf.com'
+    ]
+  }
+}
