@@ -9,7 +9,7 @@ module.exports = {
   images: {
     domains: [
       'cdn.sanity.io',
-      'www.123rf.com'
+      'mpng.subpng.com',
     ]
   }
 }

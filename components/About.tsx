@@ -32,7 +32,7 @@ function About({ page }: Props) {
                     duration: 1.2,
                 }}
                 viewport={{ once: true }}
-                className='-mb-20 sm:mt-20 sm:mb-0 flex-shrink-0 rounded-full sm:rounded-lg object-cover h-52 w-52 sm:h-72 sm:w-96 lg:w-[500px] lg:h-[600px]'
+                className='-mb-20 sm:mt-20 sm:mb-0 flex-shrink-0 rounded-full sm:rounded-lg object-cover h-48 w-48 sm:h-72 sm:w-96 lg:w-[500px] lg:h-[600px]'
                 src={urlFor(page?.profilePic).url()}
             />
 

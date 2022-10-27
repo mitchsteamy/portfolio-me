@@ -10,7 +10,7 @@ type Props = {
 function Skills({ skills }: Props) {
     return (
         <motion.div
-            className='min-h-screen flex flex-col relative overflow-hidden text-center items-center justify-center sm:text-left lg:flex-row max-w-[2000px] lg:px-10'
+            className='min-h-screen flex flex-col relative overflow-x-visible text-center items-center justify-center sm:text-left lg:flex-row max-w-[2000px] lg:px-10'
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
@@ -23,7 +23,7 @@ function Skills({ skills }: Props) {
                 hover over a skill for proficiency
             </h3>
 
-            <div className='grid grid-cols-4 gap-5 p-10 overflow-visible rounded-lg'>
+            <div className='grid grid-cols-4 gap-5 max-w-fit p-10 rounded-lg'>
                 {skills.slice(0, skills.length/2).map(skill => (
                     <Skill key={skill._id} skill={skill} />
                 ))}

@@ -14,6 +14,7 @@ import { fetchPage } from '../utils/fetchPage'
 import { fetchProjects } from '../utils/fetchProjects'
 import { fetchSkills } from '../utils/fetchSkills'
 import { fetchSocials } from '../utils/fetchSocials'
+import { TbChevronsUp } from 'react-icons/tb'
 
 type Props = {
   page: PageInfo;
@@ -60,11 +61,9 @@ const Home = ({ page, experiences, projects, skills, socials }: Props) => {
       </section>
 
       <Link href='#hero'>
-        <footer className='stick bottom-5 w-full cursor-pointer'>
+        <footer className='sticky bottom-10 w-full cursor-pointer'>
           <div className='flex items-center justify-center'>
-            <img
-              src='https://www.123rf.com/photo_80933568_letter-m-sign-design-template-element-vector-white-icon-with-soft-shadow-on-transparent-background.html'
-              className='h-10 w-15 rounded-lg filter grayscale hover:grayscale-0 cursor-pointer' />
+            <TbChevronsUp />
           </div>
         </footer>
       </Link>

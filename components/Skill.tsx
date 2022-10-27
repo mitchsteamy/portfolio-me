@@ -21,7 +21,7 @@ function Skill({ skill, directionLeft }: Props) {
                     opacity: 1,
                 }}
                 transition={{
-                    x: directionLeft ? -200 : 200,
+                    type: "spring",
                     duration: 1,
                 }}
                 viewport={{ once: true }}
