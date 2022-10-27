@@ -14,9 +14,12 @@ module.exports = {
         'lightGray': '#CED0CE'
       },
     },
-    plugins: [
-      require('tailwind-scrollbar-hide'),
-      require('tailwind-scrollbar'),
-    ],
-  }
+  },
+  plugins: [
+    require('tailwindcss'),
+    require('tailwind-scrollbar-hide'),
+    require('tailwind-scrollbar'),
+    require('autoprefixer'),
+],
+  
 }

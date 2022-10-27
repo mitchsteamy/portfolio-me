@@ -36,13 +36,13 @@ function About({ page }: Props) {
                 src={urlFor(page?.profilePic).url()}
             />
 
-            <div className='px-0 sm:px-10 h-96 overflow-y-scroll'>
+            <div className='px-5 sm:px-10 h-96 overflow-y-scroll scrollbar-thin scrollbar-track-[#515151]/30 scrollbar-thumb-[#6699CC]/90'>
                 <h4 className='text-4xl font-semibold text-platinum'>
                     A {' '}
                     <span className='underline decoration-[#6699CC]/90'>little</span>{' '}
                     about me
                 </h4>
-                <p className='text-base mt-2 text-justify text-platinum'>
+                <p className='text-base mt-2 text-justify text-platinum '>
                     {page?.backgroundInfo}
                 </p>
             </div>
