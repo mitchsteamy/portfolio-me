@@ -32,12 +32,12 @@ function About({ page }: Props) {
                     duration: 1.2,
                 }}
                 viewport={{ once: true }}
-                className='-mb-20 sm:mt-20 sm:mb-0 flex-shrink-0 rounded-full sm:rounded-lg object-cover h-48 w-48 sm:h-72 sm:w-96 lg:w-[500px] lg:h-[600px]'
+                className='-mb-20 mt-8 sm:mt-28 sm:mb-5 rounded-full sm:rounded-lg object-cover h-36 w-36 2xs:h-48 2xs:w-48 xs:h-60 xs:w-60 sm:w-96 sm:h-96'
                 src={urlFor(page?.profilePic).url()}
             />
 
-            <div className='px-5 sm:px-10 h-96 overflow-y-scroll scrollbar-thin scrollbar-track-[#515151]/30 scrollbar-thumb-[#6699CC]/90'>
-                <h4 className='text-4xl font-semibold text-platinum'>
+            <div className='px-5 xs:px-10 h-72 xs:h-auto overflow-y-scroll scrollbar-thin scrollbar-track-[#515151]/30 scrollbar-thumb-[#6699CC]/90'>
+                <h4 className='text-2xl sm:text-4xl font-semibold text-platinum'>
                     A {' '}
                     <span className='underline decoration-[#6699CC]/90'>little</span>{' '}
                     about me

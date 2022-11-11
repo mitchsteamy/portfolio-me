@@ -10,7 +10,7 @@ type Props = {
 
 function Header({ socials }: Props) {
     return (
-        <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-30 xl:items-center'>
+        <header className='sticky top-0 pt-3 px-1 flex items-start justify-between max-w-7xl mx-auto z-30 xl:items-center'>
             <motion.div
                 initial={{
                     x: -500,
@@ -34,7 +34,7 @@ function Header({ socials }: Props) {
                         url={social.url}
                         fgColor="#CED0CE"
                         bgColor="transparent"
-                        style={{ height: 40, width: 40 }}
+                        style={{height: '40px'}}
                     />
                 ))}
 
@@ -56,14 +56,14 @@ function Header({ socials }: Props) {
                     transition={{
                         duration: 1.5,
                     }}
-                    className='flex flex-row items-center text-platinum cursor-pointer'
+                    className='flex flex-row items-center text-platinum cursor-pointer -mt-0.5 pr-2'
                 >
                     <SocialIcon
                         className='cursor-pointer'
                         network='email'
                         fgColor='#CED0CE'
                         bgColor='transparent'
-                        style={{ height: 40, width: 40 }}
+                        style={{ height: 42, width: 42 }}
                     />
                     <p className='uppercase hidden md:inline-flex text-sm text-lightgray' >Get In Touch</p>
                 </motion.div>

@@ -10,7 +10,7 @@ type Props = {
 function Experience({ experiences }: Props) {
     return (
         <motion.div
-            className='h-screen flex flex-col relative overflow-hidden text-left sm:flex-row max-w-full px-10 justify-evenly mx-auto items-center'
+            className='h-screen flex flex-col relative overflow-hidden text-left sm:flex-row max-w-full px-5 xs:px-10 justify-evenly mx-auto items-center'
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
@@ -20,7 +20,7 @@ function Experience({ experiences }: Props) {
             </h3>
 
             <div 
-            className='flex max-w-full rounded-lg space-x-5 overflow-x-scroll snap-x snap-mandatory mt-10
+            className='flex max-w-full h-4/6 rounded-lg space-x-5 overflow-x-scroll snap-x snap-mandatory mt-10 sm:mt-5
             scrollbar-thin scrollbar-track-[#515151]/30 scrollbar-thumb-[#6699CC]/90'
             >
                 {experiences.map(experience => (
