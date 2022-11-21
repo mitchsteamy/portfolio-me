@@ -24,12 +24,12 @@ function Skill({ skill, directionLeft }: Props) {
                     duration: 1,
                 }}
                 viewport={{ once: true }}
-                className='rounded-full border border-lightGray object-contain h-16 w-16 xs:w-20 xs:h-20 lg:w-28 lg:h-28 
+                className='rounded-3xl border border-lightGray object-contain h-16 w-16 xs:w-20 xs:h-20 lg:w-28 lg:h-28 
                  filter group-hover:grayscale transition duration-300 ease-in flex flex-shrink-0'
                 src={urlFor(skill.image).url()}
                 />
             <div
-                className='absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 
+                className='absolute rounded-3xl opacity-0 group-hover:opacity-80 transition duration-300 
                 ease-in group-hover:bg-[#E6E8E6] h-16 w-16 xs:w-20 xs:h-20 lg:w-28 lg:h-28 z-0'
             >
                 <div className='flex items-center justify-center h-full'>

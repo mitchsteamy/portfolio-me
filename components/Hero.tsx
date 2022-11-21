@@ -26,7 +26,7 @@ function Hero({ page }: Props) {
         <div className='h-screen relative flex flex-col space-y-10 items-center justify-center text-center mx-auto overflow-hidden z-20'>
             <BackgroundCircles />
             <Image
-                className='relative rounded-full mx-auto object-cover mb-20 z-20'
+                className='relative rounded-3xl mx-auto object-cover mb-20 z-20'
                 height={200}
                 width={200}
                 src={urlFor(page?.heroImage).url()}

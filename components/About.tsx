@@ -32,7 +32,7 @@ function About({ page }: Props) {
                     duration: 1.2,
                 }}
                 viewport={{ once: true }}
-                className='-mb-20 mt-8 sm:mt-28 sm:mb-5 rounded-full sm:rounded-lg object-cover h-36 w-36 2xs:h-48 2xs:w-48 xs:h-60 xs:w-60 sm:w-96 sm:h-96'
+                className='-mb-20 mt-8 sm:mt-28 sm:mb-5 rounded-3xl object-cover h-36 w-36 2xs:h-48 2xs:w-48 xs:h-60 xs:w-60 sm:w-96 sm:h-96'
                 src={urlFor(page?.profilePic).url()}
             />
 

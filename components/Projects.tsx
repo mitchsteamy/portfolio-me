@@ -44,7 +44,7 @@ function Projects({ projects }: Props) {
                 }}
                 transition={{ duration: 1.2 }}
                 viewport={{ once: true }}
-                className='max-h-80 cursor-pointer rounded-full'
+                className='max-h-80 cursor-pointer rounded-3xl'
                 src={urlFor(project?.image).url()}
                 alt=''
               />
@@ -61,7 +61,7 @@ function Projects({ projects }: Props) {
               <div className='flex items-center justify-center'>
                 {project.technologies.map(technology => (
                   <Image
-                    className='rounded-full object-cover'
+                    className='rounded-3xl object-cover'
                     key={technology._id}
                     src={urlFor(technology.image).url()}
                     alt=''
@@ -71,7 +71,7 @@ function Projects({ projects }: Props) {
                 ))}
               </div>
 
-              <p className='max-h-[80%] text-lg text-justify overflow-y-scroll scrollbar-thin  scrollbar-track-[#515151]/30 scrollbar-thumb-[#6699CC]/90'>
+              <p className='max-h-32 sm:max-h-96 text-lg text-justify overflow-y-scroll scrollbar-thin  scrollbar-track-[#515151]/30 scrollbar-thumb-[#6699CC]/90'>
                 {project?.summary}
               </p>
             </div>
