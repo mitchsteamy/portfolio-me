@@ -32,7 +32,7 @@ function Contact({ }: Props) {
           </span>
         </h4>
 
-        <div className='space-y-4 sm:space-y-8'>
+        <div className='space-y-e sm:space-y-8 mt-2'>
           <div className='flex items-center space-x-2 justify-center'>
             <PhoneIcon className='text-[#6699CC] h-5 w-5 sm:h-7 sm:w-7 animate-pulse' />
             <p className='text-base sm:text-xl xl:text-2xl'>1-502-640-9105</p>
@@ -77,7 +77,7 @@ function Contact({ }: Props) {
             className='contactInput'
             {...register('message')} />
           <button
-            className='bg-[#6699CC] py-5 px-10 rounded-md text-platinum font-bold 
+            className='bg-[#6699CC] py-2 sm:py-5 px-10 rounded-md text-platinum font-bold 
           text-lg'>
             Submit
           </button>
