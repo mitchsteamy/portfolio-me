@@ -12,22 +12,22 @@ module.exports = {
       textColor: {
         'darkBlue': '#003B6D',
         'lightBlue': '#6699CC',
-        'onyx': '#3F403F',
+        'onyx': '#303840',
         'platinum': '#E6E8E6',
         'lightGray': '#CED0CE'
       },
     },
     screens: {
-      '2xs': '361px',
-      // => @media (min-width: 360px) { ... }
+      '2xs': '380px',
+      // => @media (min-width: 380px) { ... }
 
-      'xs': '480px',
-      // => @media (min-width: 480px) { ... }
+      'xs': '495px',
+      // => @media (min-width: 495px) { ... }
 
-      'sm': '640px',
-      // => @media (min-width: 640px) { ... }
+      'sm': '650px',
+      // => @media (min-width: 650px) { ... }
 
-      'md': '768px' ,
+      'md': '770px' ,
       // => @media (min-width: 768px) { ... }
 
       'lg': '1024px',

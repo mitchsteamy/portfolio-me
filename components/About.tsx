@@ -42,7 +42,7 @@ function About({ page }: Props) {
                     <span className='underline decoration-[#6699CC]/90'>little</span>{' '}
                     about me
                 </h4>
-                <p className='text-base mt-2 text-justify text-platinum '>
+                <p className='text-base sm:text-lg mt-2 text-justify text-platinum '>
                     {page?.backgroundInfo}
                 </p>
             </div>

@@ -33,7 +33,7 @@ function Hero({ page }: Props) {
                 alt=''
             />
             <div className='z-20'>
-                <h2 className='text-md uppercase text-lightGray pb-2 tracking-[8px] lg:tracking-[10px] '>Full-Stack Web Developer</h2>
+                <h2 className='text-md uppercase text-lightGray pb-2 tracking-[9px] '>Full-Stack Web Developer</h2>
                 <h1 className='text-2xl sm:text-3xl lg:text-4xl font-semibold px-10'>
                     <span>{text}</span>
                     <Cursor cursorColor='#6699CC' />
