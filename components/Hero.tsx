@@ -13,7 +13,7 @@ type Props = {
 }
 
 function Hero({ page }: Props) {
-    const [text, count] = useTypewriter({
+    const [text] = useTypewriter({
         words: [
             'Hi, My name is Mitch',
             'this-is-my-portfolio.js',

@@ -35,7 +35,7 @@ function Projects({ projects }: Props) {
             <Link href={project?.linkToBuild}>
               <motion.img
                 initial={{
-                  y: -300,
+                  y: -120,
                   opacity: 0
                 }}
                 whileInView={{
@@ -58,10 +58,10 @@ function Projects({ projects }: Props) {
                 {project?.title}
               </h4>
 
-              <div className='flex items-center justify-center'>
+              <div className='flex items-center justify-center mx-2'>
                 {project.technologies.map(technology => (
                   <Image
-                    className='rounded-3xl object-cover'
+                    className='rounded-md object-cover'
                     key={technology._id}
                     src={urlFor(technology.image).url()}
                     alt=''
@@ -71,7 +71,7 @@ function Projects({ projects }: Props) {
                 ))}
               </div>
 
-              <p className='max-h-32 sm:max-h-96 text-base sm:text-xl xl:text-2xl px-2 text-justify overflow-y-scroll scrollbar-thin scrollbar-track-[#515151]/30 scrollbar-thumb-[#6699CC]/90'>
+              <p className='max-h-36 2xs:max-h-72 text-base sm:text-xl px-2 text-justify overflow-y-scroll scrollbar-thin scrollbar-track-[#515151]/30 scrollbar-thumb-[#6699CC]/90'>
                 {project?.summary}
               </p>
             </div>

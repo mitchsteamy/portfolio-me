@@ -10,10 +10,10 @@ type Props = {
 
 function Skill({ skill, directionLeft }: Props) {
     return (
-        <div className='group relative flex overflow-visible cursor-pointer'>
+        <div className='group relative flex cursor-pointer'>
             <motion.img
                 initial={{
-                    x: directionLeft ? -125 : 125,
+                    x: directionLeft ? 90 : -90,
                     opacity: 0,
                 }}
                 whileInView={{
@@ -24,16 +24,16 @@ function Skill({ skill, directionLeft }: Props) {
                     duration: 1,
                 }}
                 viewport={{ once: true }}
-                className='rounded-3xl border border-lightGray object-contain h-16 w-16 xs:w-20 xs:h-20 lg:w-28 lg:h-28 
+                className='rounded-md object-contain h-16 w-16 xs:w-20 xs:h-20 lg:w-28 lg:h-28 
                  filter group-hover:grayscale transition duration-300 ease-in flex flex-shrink-0'
                 src={urlFor(skill.image).url()}
                 />
             <div
-                className='absolute rounded-3xl opacity-0 group-hover:opacity-80 transition duration-300 
+                className='absolute rounded-md opacity-0 group-hover:opacity-80 transition duration-300 
                 ease-in group-hover:bg-[#E6E8E6] h-16 w-16 xs:w-20 xs:h-20 lg:w-28 lg:h-28 z-0'
             >
                 <div className='flex items-center justify-center h-full'>
-                    <p className='text-2xl font-bold text-onyx opacity-100'>{skill.progess}</p>
+                    <p className='text-xs lg:text-base font-bold text-onyx opacity-100'>{skill.progess}</p>
                 </div>
             </div>
         </div>

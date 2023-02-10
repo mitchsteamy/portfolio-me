@@ -9,9 +9,9 @@ type Inputs = {
   message: string,
 };
 
-type Props = {}
+type Props = object;
 
-function Contact({ }: Props) {
+function Contact({}: Props) {
   const { register, handleSubmit } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
     window.location.href = `mailto:mitch.embry61@gmail?subject=${formData.subject}&
@@ -70,7 +70,7 @@ function Contact({ }: Props) {
             {...register('subject')} />
 
           <textarea
-            rows="4"
+            rows={4}
             placeholder='Message'
             className='contactInput'
             {...register('message')} />
