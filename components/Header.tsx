@@ -9,6 +9,17 @@ type Props = {
 }
 
 function Header({ socials }: Props) {
+    
+    const [hydrated, setHydrated] = React.useState(false);
+    React.useEffect(() => {
+        // This forces a rerender, so the date is rendered
+        // the second time but not the first
+        setHydrated(true);
+    }, []);
+    if (!hydrated) {
+        // Returns null on first render, so the client and server match
+        return null;
+    }
     return (
         <header className='sticky top-0 pt-3 px-1 flex items-start justify-between max-w-7xl mx-auto z-30 xl:items-center'>
             <motion.div
@@ -34,11 +45,9 @@ function Header({ socials }: Props) {
                         url={social.url}
                         fgColor="#CED0CE"
                         bgColor="transparent"
-                        style={{height: '40px'}}
+                        style={{ height: '40px' }}
                     />
                 ))}
-
-                
             </motion.div>
 
             <Link href='#contact'>

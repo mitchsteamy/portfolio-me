@@ -8,6 +8,17 @@ type Props = {
 }
 
 function About({ page }: Props) {
+    const [hydrated, setHydrated] = React.useState(false);
+	React.useEffect(() => {
+		// This forces a rerender, so the date is rendered
+		// the second time but not the first
+		setHydrated(true);
+	}, []);
+	if (!hydrated) {
+		// Returns null on first render, so the client and server match
+		return null;
+	}
+    
     return (
         <motion.div
             className='flex flex-col relative h-screen text-center sm:text-left lg:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'

@@ -44,7 +44,7 @@ function Projects({ projects }: Props) {
                 }}
                 transition={{ duration: 1.2 }}
                 viewport={{ once: true }}
-                className='max-h-60 sm:max-h-80 cursor-pointer rounded-3xl'
+                className='max-h-60 sm:max-h-80 cursor-pointer rounded-3xl mt-8'
                 src={urlFor(project?.image).url()}
                 alt=''
               />

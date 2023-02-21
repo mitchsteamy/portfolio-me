@@ -34,11 +34,11 @@ function ExperienceCard({ experience }: Props) {
             <div className='px-0 sm:px-10'>
                 <h4 className='text-xl xs:text-3xl font-light text-platinum'>{experience.jobTitle}</h4>
                 <p className='text-md xs:text-xl font-bold mt-1 text-platinum'>{experience.company}</p>
-                <div className='flex space-x-2 my-2'>
+                <div className='flex rounded-lg my-2'>
                     {/* Tech Used */}
                     {experience.technologies.map(technology => (
                         <Image
-                            className='rounded-lg px-2 '
+                            className='rounded-lg px-1 '
                             key={technology._id}
                             src={urlFor(technology.image).url()}
                             alt=''
@@ -48,7 +48,7 @@ function ExperienceCard({ experience }: Props) {
                     ))}
                 </div>
                 <p className='uppercase text-sm xs:text-lg sm:py-5 text-platinum'>
-                    {new Date(experience.dateStarted).toDateString()} - {' '}
+                    {new Date(experience?.dateStarted).toDateString()} - {' '}
                     {experience.currentlyWorking ? 'Present' : new Date(experience.dateEnded).toDateString()}
                 </p>
                 <ul className='space-y-4 ml-5 text-sm xs:text-lg max-h-60 snap-center'>
