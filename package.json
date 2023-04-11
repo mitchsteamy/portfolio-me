@@ -1,6 +1,6 @@
 {
   "name": "portfolio-me",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,14 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/core": "^7.21.0",
     "@heroicons/react": "^2.0.12",
     "@portabletext/react": "^1.0.6",
     "@sanity/core": "^2.35.0",
     "@sanity/image-url": "^1.0.2",
+    "@types/diff-match-patch": "^1.0.32",
     "autoprefixer": "^10.4.13",
     "framer-motion": "^7.10.3",
     "lint": "^0.7.0",
-    "next": "^13.1.6",
+    "next": "^13.2.1",
     "next-sanity": "^1.1.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -38,7 +40,7 @@
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
     "eslint": "^8.33.0",
-    "eslint-config-next": "^13.1.6",
+    "eslint-config-next": "^13.2.1",
     "eslint-plugin-react": "^7.32.2",
     "postcss": "^8.4.17",
     "tailwind-scrollbar": "^2.1.0-preview.0",

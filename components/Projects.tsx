@@ -71,7 +71,7 @@ function Projects({ projects }: Props) {
                 ))}
               </div>
 
-              <p className='max-h-36 2xs:max-h-72 text-base sm:text-xl px-2 text-justify overflow-y-scroll scrollbar-thin scrollbar-track-[#515151]/30 scrollbar-thumb-[#6699CC]/90'>
+              <p className='max-h-40 2xs:max-h-60 xs:max-h-72 text-base sm:text-xl px-2 text-left overflow-y-scroll scrollbar-thin scrollbar-track-[#515151]/30 scrollbar-thumb-[#6699CC]/90'>
                 {project?.summary}
               </p>
             </div>
